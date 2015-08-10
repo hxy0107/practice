@@ -1,0 +1,28 @@
+package com.hxy.code.net;
+
+import org.apache.http.HttpResponse;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.params.HttpConnectionParams;
+import org.apache.http.util.EntityUtils;
+
+import java.io.IOException;
+
+/**
+ * Created by xianyu.hxy on 2015/8/4.
+ */
+public class MyGet {
+    public String doGet(String url) throws IOException {
+        String result=null;
+        HttpGet myGet=new HttpGet(url);
+        HttpClient httpClient=new DefaultHttpClient();
+        httpClient.getParams().setIntParameter(HttpConnectionParams.CONNECTION_TIMEOUT,5*1000);
+        httpClient.getParams().setIntParameter(HttpConnectionParams.SO_TIMEOUT,30*1000);
+        HttpResponse httpResponse=httpClient.execute(myGet);
+        if(httpResponse.getStatusLine().getStatusCode()==200){
+            result= EntityUtils.toString(httpResponse.getEntity(),"utf-8");
+        }
+        return result;
+    }
+}

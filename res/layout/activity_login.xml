@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="#f4f4f4"
+              android:focusable="true"
+              android:focusableInTouchMode="true"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+<RelativeLayout
+        android:id="@+id/titlerelativelayout"
+        android:background="@drawable/title_background"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView
+            android:id="@+id/Login_back"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:src="@drawable/ic_back"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <TextView
+            android:id="@+id/Login_title_txt"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="大众点评网"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</RelativeLayout>
+
+    <LinearLayout
+            android:layout_marginTop="10dp"
+            android:background="#adadad"
+            android:orientation="vertical"
+            android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText
+                android:layout_marginBottom="0.2dp"
+                android:background="#ffffff"
+                android:hint="请输入登录帐号"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textSize="16sp"
+                android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <EditText
+                android:id="@+id/Login_password"
+                android:layout_marginBottom="0.2dp"
+                android:background="#ffffff"
+                android:hint="请输入登录密码"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textSize="16sp"
+                android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <RelativeLayout
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:id="@+id/Login_OK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_btn_bg"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="登　录"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+        <TextView
+                android:id="@+id/Login_wangjimima"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Login_OK"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="忘记密码?"
+                android:textColor="@color/my_title_textcolor"
+                android:textSize="16sp" />
+        <TextView
+                android:id="@+id/Login_zhuce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/Login_OK"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="注册帐号"
+                android:textColor="@color/my_title_textcolor"
+                android:textSize="16sp" />
+    </RelativeLayout>
+</LinearLayout>

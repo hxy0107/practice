@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" >
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/title_background"
+            android:gravity="center_horizontal|center_vertical"
+            android:paddingBottom="11dp"
+            android:paddingTop="11dp"
+            android:text="签到墙"
+            android:textSize="18sp" />
+
+    <LinearLayout
+            android:background="#c4c4c4"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout
+                android:id="@+id/Checkin_search"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/search_input"
+                android:gravity="left"
+                android:orientation="horizontal"
+                android:padding="7dp"
+                android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView
+                    android:src="@drawable/ic_search"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView
+                    android:gravity="center_horizontal"
+                    android:text="搜索"
+                    android:textColor="#666666"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/Cheickin_Group"
+            android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    </LinearLayout>
+</LinearLayout>
